@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MKS Sistemas</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style-css.css">
+</head>
+<body>
+    <header>
+    
+  <div class="logo">
+    <span class="mks">MKS</span> <span class="sistemas">Sistemas</span>
+  </div>
+
+  <div class="cart-container">
+    <div class="cart-icon" onclick="toggleCartPopup()">
+      <i class="fas fa-shopping-cart"></i>
+        <span class="item-count" id="itemCount"></span>
+  </div>
+
+  <div class="cart-popup" id="cartPopup">
+    <p id="cartItemsText">Nenhum item selecionado</p>
+      <button onclick="toggleCartPopup()">Fechar</button>
+    <div class="cart-popup" id="cartPopup">
+      <h2>Carrinho de compras</h2>
+        <div id="cartItemsText">
+    <p>Nenhum item selecionado</p>
+    <p>Total: R$ <span id="totalAmount">0,00</span></p>
+  </div>
+
+  <button class="close-btn" onclick="toggleCartPopup()"><i class="fas fa-times"></i></button>
+</div>
+</div>
+</div>
+</div>
+
+</header>
+  <main>
+        <div class="row">
+            <div class="product" id="product1">
+                <h2>Apple Watch Series 4 GPS</h2>
+                <img src="https://cdn-cosmos.bluesoft.com.br/products/190198858696" alt="Apple Watch">
+                <button onclick="addItemToCart('Apple Watch')">Adicionar ao carrinho</button>
+            </div>
+            <div class="product" id="product2">
+                <h2>JBL Speaker</h2>
+                <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQAORzwtWOG7SpqeHlvLWilNJleD8di6jRG2OuDltBbcSwJbiJF"alt="JBL">
+                <button onclick="addItemToCart('JBL')">Adicionar ao carrinho</button>
+            </div>
+            <div class="product" id="product3">
+                <h2>Apple Iphone x 128GB</h2>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXataCvoC9g7ZPeirX3Y7fnLHTBoV83-6OxDh8fD3JzFRnMxWK" alt="Telefone">
+                <button onclick="addItemToCart('Telefone')">Adicionar ao carrinho</button>
+            </div>
+            <div class="product" id="product4">
+                <h2>Beats Headphones</h2>
+                <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT1EIHX73N2r79PLYSi_bt-LkwoF8BF2Sf3UatEXGHQQxgzG559" alt="Notebook">
+                <button onclick="addItemToCart('Notebook')">Adicionar ao carrinho</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="product" id="product5">
+                <h2>Apple Macbook Pro</h2>
+                <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQkM1LueBVnEHrL3_xLKlzmqFpVO64y4qpH9GaBHQ9WFf-w1YIG" alt="Tablet">
+                <button onclick="addItemToCart('Tablet')">Adicionar ao carrinho</button>
+            </div>
+            <div class="product" id="product6">
+                <h2>Apple Ipad Pro 64GB</h2>
+                <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQJYbJRLtzEJiOICKmMhMak3ouLcDDUplzLmKfwlUPsReYB2euK" alt="Apple HomePod">
+                <button onclick="addItemToCart('Apple HomePod')">Adicionar ao carrinho</button>
+            </div>
+            <div class="product" id="product7">
+                <h2>Apple Homepod</h2>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTK2gr_VuuhT1LSMa_vbZ9uPctS8qJ2jL8QupS5yQ2Qvcp-9s0Y" alt="Smartwatch">
+                <button onclick="addItemToCart('Smartwatch')">Adicionar ao carrinho</button>
+            </div>
+            <div class="product" id="product8">
+                <h2>JBuds Air Wireless</h2>
+                <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQRf0VYhkUrpdsm6y57Q78ibRzgmh8fnm7kVjun8mtBjmPKcZjL" alt="Fone de Ouvido">
+                <button onclick="addItemToCart('Fone de Ouvido')">Adicionar ao carrinho</button>
+            </div>
+
+        </div>
+    </main>
+    <script src="fuction-js.js"></script>
+</body>
+</html>
